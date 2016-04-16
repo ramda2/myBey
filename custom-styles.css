@@ -17,13 +17,19 @@ body {
     display: flex;`
 	
 }
+
 #minheightsetter {
-	min-height: 800px;
+	min-height: 500px;
 }
+
 #send-message {
 	float: right;
 }
 
 #top-row .col-md-6 {
 	opacity: 0.5;
+}
+
+#everything-container {
+	min-height: 100%;
 }

@@ -7,38 +7,65 @@
     </title>
 
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="chat.css" />
     <link href="/custom-styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="container" min-height="666px" id="main" width="800px">
-        <div class="row" id="top-row">
-            <!-- the left one -->
-            <div class="col-md-6 leftPane">
-                <h3>Content for animation</h3>
-                <div id="animation">
-                    
+    <div id="everything-container">
+        <div class="container" id="main" width="800px">
+            <div class="row" id="top-row">
+                <!-- the left one -->
+                <div class="col-md-6 leftPane">
+                    <h3>Content for animation</h3>
+                    <div id="animation">
+                        
+                    </div>
+                    <div id="minheightsetter">.</div>
                 </div>
-                <div id="minheightsetter">.</div>
-            </div>
 
-            <!-- the right one -->
-            <div class="col-md-6 rightPane">
-            <h3>Content for Chat</h3>
-                
-                <div id="chat">
-                    Chat conversation
+                <!-- the right one -->
+                <div class="col-md-6 rightPane">
+                <h3>Content for Chat</h3>
+                    
+                    <div id="chat">
+                        <section>
+                            <div class="from-me">
+                                <p>Hey there! What's up?</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="from-them">
+                                <p>Checking out iOS7 you know..</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="from-me">
+                                <p>Check out this bubble!</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="from-them">
+                                <p>It's pretty cool!</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="from-me">
+                                <p>Yeah it's pure CSS &amp; HTML</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="from-them">
+                                <p>Wow that's impressive. But what's even more impressive is that this bubble is really high.</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </div>
-        </div><!-- row1 -->
-        <div class="row">
-            <div class="col-md-6 leftPane">
-            </div>
-            <div class="col-md-6 rightPane">
-                <div id="textEntry">
-                    <a href="#" class="btn btn-default" id="send-message">test</a>
+            </div><!-- row1 -->
+            <div class="row">
+                <div class="col-md-6 leftPane">
                 </div>
-            </div>
-        </div><!-- row2 -->
+                <div class="col-md-6 rightPane">
+                    <div id="textEntry">
+                        <a href="#" class="btn btn-default" id="send-message">test</a>
+                    </div>
+                </div>
+            </div><!-- row2 -->
+        </div>
     </div>
 </body>
 </html>
