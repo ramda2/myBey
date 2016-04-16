@@ -1,0 +1,27 @@
+#left {
+position: absolute;
+float:rightwards
+width:500px;
+height:900px;
+right: 900px;
+top:125px;
+background: yellow;
+}
+
+#upright { 
+position:absolute;
+
+top:125px;
+width:50px; 
+height:900px; 
+right:400px;
+background:blue; 
+
+}
+#below { 
+position:absolute;
+height:300px; 
+width:400px; 
+bottom:300px;
+background:red; 
+}
