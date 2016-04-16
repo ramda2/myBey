@@ -1,11 +1,14 @@
 
-# from flask import Flask
-# app = Flask(__name__)
+from flask import Flask
+app = Flask(__name__)
 import pprint
 from gensim import corpora, models, similarities, matutils
 import re
 import pandas as pd
 from operator import itemgetter
+
+from flask import request
+import json
 
 import random
 
@@ -79,8 +82,9 @@ for o in our_texts:
 		continue
 
 
-@app.route('/status')
-def getStatus(line):
+@app.route('/status', methods = ['POST'])
+def getStatus():
+	line = str(request.form['textmessage'])
 	try:
 		results = model[dictionary.doc2bow(line.lower().split()) ]
 		value = max(results,key=itemgetter(1))[0] 
@@ -100,11 +104,11 @@ def getStatus(line):
 			gif = 'angry'
 		elif(value == 6):
 			gif = 'carefree'
-		return {'message': message, 'gif': gif}
+		return json.dumps({'message': message, 'gif': gif})
 	
 	except Exception, e:
 		message = random.choice (our_texts)
-		return {'message': message, 'gif': 'default'}
+		return json.dumps({'message': message, 'gif': 'default'})
 	
 
 
@@ -112,4 +116,4 @@ def getStatus(line):
 # pp.pprint(topics_indexed)
 
 if __name__ == "__main__":
-  app.run()
+  app.run(debug=True)
