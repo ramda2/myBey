@@ -1,42 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Flawless</title>
-<style type="text/css">
-body {
-	background-image: url(flawless.png);
-	background-repeat: non-repeat;
-	color: #000;
-}
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>
+        Flawless
+    </title>
 
-.centerTable {
-}
-
-</style>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="/custom-styles.css" rel="stylesheet"/>
 </head>
 <body>
+    <div class="container" min-height="666px" id="main" width="800px">
+        <div class="row" id="top-row">
+            <!-- the left one -->
+            <div class="col-md-6 leftPane">
+                <h3>Content for animation</h3>
+                <div id="animation">
+                    
+                </div>
+                <div id="minheightsetter">.</div>
+            </div>
 
-<div id="main" height="666px" width="800px">
-<div id="animation">
-<table class="centerTable" align="center" width="1000px" height="800px" border="1">
-  <tr>
-    <td width="292" bgcolor="#FF00FF">Content for animation</td>
-    <td width="292" bgcolor="#00FF00">Content for Chat</td>
-  </tr>
-</table>
-</div>
-<div id="chat">
-Chat conversation
-</div>
-
-<div id="textEntry">
-Text entry
-</div>
-
-</div>
-
-
-	
+            <!-- the right one -->
+            <div class="col-md-6 rightPane">
+            <h3>Content for Chat</h3>
+                
+                <div id="chat">
+                    Chat conversation
+                </div>
+            </div>
+        </div><!-- row1 -->
+        <div class="row">
+            <div class="col-md-6 leftPane">
+            </div>
+            <div class="col-md-6 rightPane">
+                <div id="textEntry">
+                    <a href="#" class="btn btn-default" id="send-message">test</a>
+                </div>
+            </div>
+        </div><!-- row2 -->
+    </div>
 </body>
 </html>

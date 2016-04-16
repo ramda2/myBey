@@ -1,6 +1,29 @@
 body {
 	background-image: url(flawless.png);
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: 100%;
 	color: #000;
+}
+
+.leftPane {
+	background-color: #FF00FF;
+}
+
+.rightPane {
+	background-color: #00FF00;
+}
+
+.row {
+    display: flex;`
+	
+}
+#minheightsetter {
+	min-height: 800px;
+}
+#send-message {
+	float: right;
+}
+
+#top-row .col-md-6 {
+	opacity: 0.5;
 }
