@@ -27,11 +27,11 @@ section div {
   position: relative;
   padding: 10px 20px;
   color: white;
-  background: #0B93F6;
+  background: rgb(246, 114, 139);;
   border-radius: 25px;
   float: right;
 }
-.from-me:before {
+/*.from-me:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -50,20 +50,19 @@ section div {
   right: -56px;
   width: 26px;
   height: 20px;
-  background: white;
   border-bottom-left-radius: 10px;
   -webkit-transform: translate(-30px, -2px);
-}
+}*/
 
 .from-them {
   position: relative;
   padding: 10px 20px;
-  background: #E5E5EA;
+  background: #fff;
   border-radius: 25px;
   color: black;
   float: left;
 }
-.from-them:before {
+/*.from-them:before {
   content: "";
   position: absolute;
   z-index: 2;
@@ -82,7 +81,7 @@ section div {
   left: 4px;
   width: 26px;
   height: 20px;
-  background: white;
   border-bottom-right-radius: 10px;
   -webkit-transform: translate(-30px, -2px);
 }
+*/

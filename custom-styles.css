@@ -5,12 +5,23 @@ body {
 	color: #000;
 }
 
-.leftPane {
-	background-color: #FF00FF;
+#bottom-row .leftPane {
+	/*background-color: #FF00FF;*/
+	background-color: #000;
 }
 
-.rightPane {
-	background-color: #00FF00;
+#top-row .leftPane {
+	opacity: 0;
+}
+
+#bottom-row .rightPane {
+	/*background-color: #00FF00;*/
+	background-color: rgb(246, 114, 139);
+}
+
+#top-row .rightPane {
+	background-color: #fcd2da;
+	opacity: 1 !important;
 }
 
 .row {
