@@ -1,5 +1,6 @@
 
 from flask import Flask
+from flask.ext.cors import CORS
 app = Flask(__name__)
 import pprint
 from gensim import corpora, models, similarities, matutils
@@ -116,4 +117,5 @@ def getStatus():
 # pp.pprint(topics_indexed)
 
 if __name__ == "__main__":
-  app.run(debug=True)
+	CORS(app)
+  	app.run(debug=True)
