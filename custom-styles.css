@@ -24,6 +24,7 @@ body {
 
 #send-message {
 	float: right;
+	margin: 10px 0;
 }
 
 #top-row .col-md-6 {
@@ -32,4 +33,10 @@ body {
 
 #everything-container {
 	min-height: 100%;
+}
+
+#theinput {
+	float: left;
+    width: 80%;
+    margin: 10px 0;
 }

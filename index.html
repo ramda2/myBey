@@ -29,10 +29,7 @@
                     
                     <div id="chat">
                         <section>
-                            <div class="from-me">
-                                <p>Hey there! What's up?</p>
-                            </div>
-                            <div class="clear"></div>
+                            <div class="from-me"><p>Hey there! What's up?</p></div><div class="clear"></div>
                             <div class="from-them">
                                 <p>Checking out iOS7 you know..</p>
                             </div>
@@ -53,6 +50,13 @@
                                 <p>Wow that's impressive. But what's even more impressive is that this bubble is really high.</p>
                             </div>
                         </section>
+                        <script>
+                            // function makehtmlstring(message, from) {
+                            //     return '<div class="from-' + from + '"><p>' + message + '</p></div><div class="clear"></div>';
+                            // };
+
+                            // $('#chat').append($(makehtmlstring("i am a", "me")));
+                        </script>
                     </div>
                 </div>
             </div><!-- row1 -->
@@ -60,8 +64,9 @@
                 <div class="col-md-6 leftPane">
                 </div>
                 <div class="col-md-6 rightPane">
+                    <textarea class="form-control" rows="1" id="theinput"></textarea>
                     <div id="textEntry">
-                        <a href="#" class="btn btn-default" id="send-message">test</a>
+                        <a href="#" class="btn btn-default" id="send-message">Send</a>
                     </div>
                 </div>
             </div><!-- row2 -->
