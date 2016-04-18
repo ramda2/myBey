@@ -1,0 +1,24 @@
+{
+  "name": "mybey-lyrics-crawler",
+  "version": "0.0.1",
+  "description": "Gets the lyrics for use by the myBey webapp.",
+  "main": "getLyricsArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramda2/myBey.git"
+  },
+  "author": "David Ankin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramda2/myBey/issues"
+  },
+  "homepage": "https://github.com/ramda2/myBey#readme",
+  "private": "true",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "request": "^2.72.0"
+  }
+}
