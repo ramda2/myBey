@@ -20,7 +20,8 @@ body {
 
 body {
   margin: 10px 0;
-  padding: 10px;
+  padding: 10px 0;
+  overflow-x: hidden;
 }
 @media (min-width: 501px) {
   .chat-window {
@@ -28,9 +29,16 @@ body {
     top: 0px;
     right:20px;
     width: 40%;
-    height: 100vh;
     /* border: 5px solid #000; */
+    height: 100vh;
   }
+}
+ #chat-window-messages{ 
+  clear: both;
+}
+.panel-body {
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .chat-window-panel-holder {
@@ -79,4 +87,9 @@ div.chat-window-message-recv {
   margin-top: 20px;
   font-size: 24px;
   color: #000;
+}
+
+/** image css */
+#animation {
+  opacity: 0.5;
 }
