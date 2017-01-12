@@ -1,53 +1,82 @@
+/** from original */
 body {
-	background-image: url(flawless.png);
-	background-repeat: repeat-y;
-	background-size: 100%;
-	color: #000;
+  background-image: url(http://mybey.ankin.info/flawless.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: #000;
+}
+.panel, .panel > .panel-heading, .panel > .panel-body {
+  background-color: #fcd2da;
+}
+.panel > .panel-heading { border: none; }
+
+
+/* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+.no-padding { padding: 0; }
+
+body {
+  margin: 10px 0;
+  padding: 10px;
+}
+@media (min-width: 501px) {
+  .chat-window {
+    position:fixed;
+    top: 0px;
+    right:20px;
+    width: 40%;
+    height: 100vh;
+    /* border: 5px solid #000; */
+  }
 }
 
-#bottom-row .leftPane {
-	/*background-color: #FF00FF;*/
-	background-color: #000;
+.chat-window-panel-holder {
+  height: inherit;
+  border: 0px solid; /* idk why solid */
+}
+@media (min-width: 500px) {
+  .chat-window-send-row {
+    position: fixed;
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .chat-window-send-row {
+    clear: both;
+    margin-bottom: -25px;    
+  }
+}
+.chat-window-send-row {
+    background-color: rgb(246, 114, 139);
+    padding: 10px 0;
+    bottom: 0;
+}
+#chat-window-send-message {
+  float: right;
 }
 
-#top-row .leftPane {
-	opacity: 0;
+div.chat-window-message {
+  clear: both;
+}
+div.chat-window-message-sent {
+  float: right;
+}
+div.chat-window-message p {
+  border-radius: 20px;
+  padding: 15px 15px;
 }
 
-#bottom-row .rightPane {
-	/*background-color: #00FF00;*/
-	background-color: rgb(246, 114, 139);
-}
+div.chat-window-message-sent p { color: white; background: rgb(246, 114, 139); }
+div.chat-window-message-recv p { color: black; background: #fff; }
 
-#top-row .rightPane {
-	background-color: #fcd2da;
-	opacity: 1 !important;
+div.chat-window-message-recv {
+  float: left;
 }
-
-.row {
-    display: flex;`
-	
-}
-
-#minheightsetter {
-	min-height: 500px;
-}
-
-#send-message {
-	float: right;
-	margin: 10px 0;
-}
-
-#top-row .col-md-6 {
-	opacity: 0.5;
-}
-
-#everything-container {
-	min-height: 100%;
-}
-
-#theinput {
-	float: left;
-    width: 80%;
-    margin: 10px 0;
+#chat-window-title {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #000;
 }

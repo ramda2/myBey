@@ -29,7 +29,7 @@ function onTestChange() {
     $('#chat').append(makehtmlstring($('#theinput').val(), "me"));
     $.ajax({
       type: "POST",
-      url: 'http://127.0.0.1:5000/status',
+      url: 'http://mybey.ankin.info/status',
       data: {'textmessage': $('#theinput').val() },
       
       success: function(response){

@@ -6,42 +6,45 @@
     <script src='bower_components/jquery/dist/jquery.js'></script>
     <script src='index.js'></script>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="chat.css" />
+    <!-- <link rel="stylesheet" href="chat.css" /> -->
     <link href="/custom-styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="everything-container">
-        <div class="container" id="main" width="800px">
-            <div class="row" id="top-row">
-                <!-- the left one -->
-                <div class="col-md-6 leftPane">
-                    <h3>Content for animation</h3>
-                    <div id="animation">
-                        <img src="">
-                    </div>
-                    <div id="minheightsetter">.</div>
-                </div>
-                <!-- the right one -->
-                <div class="col-md-6 rightPane">
-                <h3>myBey <small>(gif chat)</small></h3>
-                    <div>
-                        <section id="chat">
-                            
-                        </section>
-                    </div>
-                </div>
-            </div><!-- row1 -->
-            <div class="row" id="bottom-row">
-                <div class="col-md-6 leftPane">
-                </div>
-                <div class="col-md-6 rightPane">
-                    <textarea class="form-control" rows="1" id="theinput" onkeypress='onTestChange()'></textarea>
-                    <div id="textEntry">
-                        <a href="#" class="btn btn-default" id="send-message">Send</a>
-                    </div>
-                </div>
-            </div><!-- row2 -->
+  <div class="row">
+    <div class="chat-window col-md-6 no-padding">
+      <div class="panel panel-default chat-window-panel-holder">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="chat-window-title">myBey
+            <small style="float:right;">(gif chat)</small>
+          </h3>      
         </div>
+        <div class="panel-body">
+          <div id="chat-window-messages">
+            <div class="chat-window-message chat-window-message-sent" id="chat-window-sent-proto">
+              <p>Hello world</p>
+            </div>
+            <div class="chat-window-message chat-window-message-recv" id="chat-window-recv-proto">
+              <p>Hello world</p>
+            </div>
+          </div>
+          <div class="row chat-window-send-row">
+            <div class="col-md-9 col-xs-9">
+              <textarea class="form-control" rows="1" style="width: 100%;"></textarea>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <div id="textEntry">
+                <a href="#" class="btn btn-default" id="chat-window-send-message">Send</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-md-6">
+      <div id="animation">
+        <img src="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
